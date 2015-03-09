@@ -1,4 +1,4 @@
-#Angular boilerplate 
+#Angular boiler 
 
 install nodejs https://nodejs.org/
 npm install -g yo
@@ -37,3 +37,7 @@ add base tag to specify the base URL to use for all relative URLs.
 If you configure $location to use html5Mode (history.pushState), you need to specify the base URL for the application with a <base href=""> tag or configure $locationProvider to not require a base tag by passing a definition object with requireBase:false to $locationProvider.html5Mode():
 <base href="/app/">
 https://docs.angularjs.org/error/$location/nobase
+
+optional:
+install a progress bar
+https://github.com/victorbjelkholm/ngprogress

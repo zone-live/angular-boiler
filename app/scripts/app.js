@@ -8,27 +8,39 @@
  *
  * Main module of the application.
  */
-var boilerAngularApp = angular.module('boilerAngularApp', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch']);
+var boilerAngularApp = angular.module('boilerAngularApp', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch', 'ngProgress']);
 
-    boilerAngularApp.config(function ($routeProvider, $locationProvider) {
+boilerAngularApp.config(function ($routeProvider, $locationProvider) {
 
-        $routeProvider
-            .when('/', {
-                templateUrl: 'views/main.html',
-                controller: 'MainCtrl'
-            })
-            .when('/about', {
-                templateUrl: 'views/about.html',
-                controller: 'AboutCtrl'
-            })
-            .when('/contact', {
-                templateUrl: 'views/contact.html',
-                controller: 'ContactCtrl'
-            })
-            .otherwise({
-                redirectTo: '404.html'
-            });
+    $routeProvider
+        .when('/', {
+            templateUrl: 'views/main.html',
+            controller: 'MainCtrl'
+        })
+        .when('/about', {
+            templateUrl: 'views/about.html',
+            controller: 'AboutCtrl'
+        })
+        .when('/contact', {
+            templateUrl: 'views/contact.html',
+            controller: 'ContactCtrl'
+        })
+        .otherwise({
+            redirectTo: '404.html'
+        });
 
-        //use the HTML5 History API
-        $locationProvider.html5Mode(true);
+    //use the HTML5 History API
+    $locationProvider.html5Mode(true);
+});
+
+boilerAngularApp.run(function($rootScope, ngProgress) {
+    ngProgress.color('red');
+    $rootScope.$on('$routeChangeStart', function() {
+        ngProgress.start();
     });
+
+    $rootScope.$on('$routeChangeSuccess', function() {
+        ngProgress.complete();
+    });
+    // Do the same with $routeChangeError
+});

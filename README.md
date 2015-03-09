@@ -1,7 +1,7 @@
 ##Angular boilerplate
 
 
-** 1 — Install [NodeJS](https://nodejs.org/)**
+**1 — Install [NodeJS](https://nodejs.org/)**
 
 ```javascript
 npm install -g yo

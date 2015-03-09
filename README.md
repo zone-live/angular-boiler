@@ -31,8 +31,9 @@ yo angular [app-name]
 
 **4 — Run 'npm install' and 'npm update'** to install all your node dependencies
 run 'bower update' too. Or run 
-```javascript
-python -m SimpleHTTPServer```
+```
+python -m SimpleHTTPServer
+```
 for preview too.
 
 ####Pretty URLs

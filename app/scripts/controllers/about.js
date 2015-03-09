@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name edpAngularApp.controller:AboutCtrl
+ * @name boilerAngularApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the edpAngularApp
+ * Controller of the boilerAngularApp
  */
-edpAngularApp.controller('AboutCtrl', function ($scope) {
+boilerAngularApp.controller('AboutCtrl', function ($scope) {
 	$scope.message = 'Everyone come and see how good I look!';
 });

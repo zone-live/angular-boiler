@@ -2,15 +2,15 @@
 
 /**
  * @ngdoc overview
- * @name edpAngularApp
+ * @name boilerAngularApp
  * @description
- * # edpAngularApp
+ * # boilerAngularApp
  *
  * Main module of the application.
  */
-var edpAngularApp = angular.module('edpAngularApp', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch']);
+var boilerAngularApp = angular.module('boilerAngularApp', ['ngAnimate','ngCookies','ngResource','ngRoute','ngSanitize','ngTouch']);
 
-    edpAngularApp.config(function ($routeProvider, $locationProvider) {
+    boilerAngularApp.config(function ($routeProvider, $locationProvider) {
 
         $routeProvider
             .when('/', {

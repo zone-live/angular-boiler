@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc function
- * @name edpAngularApp.controller:ContactCtrl
+ * @name boilerAngularApp.controller:ContactCtrl
  * @description
  * # ContactCtrl
- * Controller of the edpAngularApp
+ * Controller of the boilerAngularApp
  */
-edpAngularApp.controller('ContactCtrl', function ($scope) {
+boilerAngularApp.controller('ContactCtrl', function ($scope) {
 	$scope.message = 'Contact Page';
 });

@@ -14,15 +14,15 @@ boilerAngularApp.config(function ($routeProvider, $locationProvider) {
 
     $routeProvider
         .when('/', {
-            templateUrl: 'views/main.html',
+            templateUrl: 'templates/main.html',
             controller: 'MainCtrl'
         })
         .when('/about', {
-            templateUrl: 'views/about.html',
+            templateUrl: 'templates/about.html',
             controller: 'AboutCtrl'
         })
         .when('/contact', {
-            templateUrl: 'views/contact.html',
+            templateUrl: 'templates/contact.html',
             controller: 'ContactCtrl'
         })
         .otherwise({
